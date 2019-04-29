@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>D Survey Guru - Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="font/iconsmind-s/css/iconsminds.css"/>
+    <link rel="stylesheet" href="font/simple-line-icons/css/simple-line-icons.css"/>
+
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/vendor/fullcalendar.min.css"/>
+    <link rel="stylesheet" href="css/vendor/dataTables.bootstrap4.min.css"/>
+    <link rel="stylesheet" href="css/vendor/datatables.responsive.bootstrap4.min.css"/>
+    <link rel="stylesheet" href="css/vendor/select2.min.css"/>
+    <link rel="stylesheet" href="css/vendor/perfect-scrollbar.css"/>
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/vendor/bootstrap-stars.css"/>
+    <link rel="stylesheet" href="css/vendor/nouislider.min.css"/>
+    <link rel="stylesheet" href="css/vendor/bootstrap-datepicker3.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/dore.light.blue.min.css" />
+
+</head>
+
+<body id="app-container" class="menu-sub-hidden show-spinner">
+<nav class="navbar fixed-top">
+    <div class="d-flex align-items-center navbar-left">
+        <a href="#" class="menu-button d-none d-md-block">
+            <svg class="main" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 17">
+                <rect x="0.48" y="0.5" width="7" height="1"/>
+                <rect x="0.48" y="7.5" width="7" height="1"/>
+                <rect x="0.48" y="15.5" width="7" height="1"/>
+            </svg>
+            <svg class="sub" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17">
+                <rect x="1.56" y="0.5" width="16" height="1"/>
+                <rect x="1.56" y="7.5" width="16" height="1"/>
+                <rect x="1.56" y="15.5" width="16" height="1"/>
+            </svg>
+        </a>
+
+        <a href="#" class="menu-button-mobile d-xs-block d-sm-block d-md-none">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 17">
+                <rect x="0.5" y="0.5" width="25" height="1"/>
+                <rect x="0.5" y="7.5" width="25" height="1"/>
+                <rect x="0.5" y="15.5" width="25" height="1"/>
+            </svg>
+        </a>
+
+    </div>
+
+
+    <a class="navbar-logo" href="/backend">
+        D SURVEY GURU
+    </a>
+
+    <div class="navbar-right">
+        <div class="header-icons d-inline-block align-middle">
+            <div class="position-relative d-none d-sm-inline-block">
+                <button class="header-icon btn btn-empty" type="button" id="iconMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    <i class="simple-icon-grid"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right mt-3  position-absolute" id="iconMenuDropdown">
+                    <a href="#" class="icon-menu-item">
+                        <i class="iconsminds-equalizer d-block"></i>
+                        <span>Settings</span>
+                    </a>
+
+                    <a href="#" class="icon-menu-item">
+                        <i class="iconsminds-bar-chart-4 d-block"></i>
+                        <span>Profits</span>
+                    </a>
+
+                    <a href="#" class="icon-menu-item">
+                        <i class="iconsminds-file d-block"></i>
+                        <span>Surveys</span>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <button class="header-icon btn btn-empty d-none d-sm-inline-block" type="button" id="fullScreenButton">
+                <i class="simple-icon-size-fullscreen"></i>
+                <i class="simple-icon-size-actual"></i>
+            </button>
+
+        </div>
+
+        <div class="user d-inline-block">
+            <button class="btn btn-empty p-0" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                <span class="name">Test Company</span>
+                <span>
+                        <img alt="Profile Picture" src="img/profile-pic-l.jpg"/>
+                    </span>
+            </button>
+
+            <div class="dropdown-menu dropdown-menu-right mt-3">
+                <a class="dropdown-item" href="#">Account</a>
+                <a class="dropdown-item" href="#">History</a>
+                <a class="dropdown-item" href="#">Support</a>
+                <a class="dropdown-item" href="#">Sign out</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="sidebar">
+    <div class="main-menu">
+        <div class="scroll">
+            <ul class="list-unstyled">
+                <li class="active">
+                    <a href="/backend">
+                        <i class="iconsminds-shop-4"></i>
+                        <span>Dashboards</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/survey">
+                        <i class="iconsminds-digital-drawing"></i> Survey
+                    </a>
+                </li>
+                <li>
+                    <a href="#Resell">
+                        <i class="iconsminds-air-balloon-1"></i> Market
+                    </a>
+                </li>
+                <li>
+                    <a href="#System">
+                        <i class="iconsminds-three-arrow-fork"></i> System
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sub-menu">
+        <div class="scroll">
+
+            <ul class="list-unstyled" data-link="Resell">
+                <li>
+                    <a href="Apps.MediaLibrary.html">
+                        <i class="simple-icon-picture"></i> Surveys
+                    </a>
+                </li>
+                <li>
+                    <a href="Apps.Todo.List.html">
+                        <i class="simple-icon-check"></i> Orders
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-unstyled" data-link="System">
+
+                <li>
+                    <a href="Ui.Tables.html">
+                        <i class="simple-icon-grid"></i> Settings
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<main>
+    <div class="container-fluid">
+        <div class="row  ">
+            <div class="col-12">
+
+                <h1>Dashboard</h1>
+                <nav class="breadcrumb-container d-none d-sm-block d-lg-inline-block" aria-label="breadcrumb">
+                    <ol class="breadcrumb pt-0">
+                        <li class="breadcrumb-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                    </ol>
+                </nav>
+                <div class="separator mb-5"></div>
+
+
+            </div>
+            <div class="col-lg-12 col-xl-6">
+
+                <div class="icon-cards-row">
+                    <div class="owl-container">
+                        <div class="owl-carousel dashboard-numbers owl-loaded owl-drag">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage"
+                                     style="transform: translate3d(-637px, 0px, 0px); transition: all 0.25s ease 0s; width: 1604px; padding-left: 5px; padding-right: 5px;">
+                                    <div class="owl-item cloned" style="width: 144.333px; margin-right: 15px;"><a
+                                                href="#" class="card">
+                                            <div class="card-body text-center">
+                                                <i class="iconsminds-basket-coins"></i>
+                                                <p class="card-text mb-0">Completed Orders</p>
+                                                <p class="lead text-center">32</p>
+                                            </div>
+                                        </a></div>
+                                    <div class="owl-item cloned" style="width: 144.333px; margin-right: 15px;"><a
+                                                href="#" class="card">
+                                            <div class="card-body text-center">
+                                                <i class="iconsminds-arrow-refresh"></i>
+                                                <p class="card-text mb-0">Refund Requests</p>
+                                                <p class="lead text-center">2</p>
+                                            </div>
+                                        </a></div>
+                                    <div class="owl-item cloned" style="width: 144.333px; margin-right: 15px;"><a
+                                                href="#" class="card">
+                                            <div class="card-body text-center">
+                                                <i class="iconsminds-mail-read"></i>
+                                                <p class="card-text mb-0">New Comments</p>
+                                                <p class="lead text-center">25</p>
+                                            </div>
+                                        </a></div>
+                                    <div class="owl-item" style="width: 144.333px; margin-right: 15px;"><a href="#"
+                                                                                                           class="card">
+                                            <div class="card-body text-center">
+                                                <i class="iconsminds-clock"></i>
+                                                <p class="card-text mb-0">Pending Orders</p>
+                                                <p class="lead text-center">16</p>
+                                            </div>
+                                        </a></div>
+                                    <div class="owl-item active" style="width: 144.333px; margin-right: 15px;"><a
+                                                href="#" class="card">
+                                            <div class="card-body text-center">
+                                                <i class="iconsminds-basket-coins"></i>
+                                                <p class="card-text mb-0">Completed Orders</p>
+                                                <p class="lead text-center">32</p>
+                                            </div>
+                                        </a></div>
+                                    <div class="owl-item active" style="width: 144.333px; margin-right: 15px;"><a
+                                                href="#" class="card">
+                                            <div class="card-body text-center">
+                                                <i class="iconsminds-arrow-refresh"></i>
+                                                <p class="card-text mb-0">Refund Requests</p>
+                                                <p class="lead text-center">2</p>
+                                            </div>
+                                        </a></div>
+                                    <div class="owl-item active" style="width: 144.333px; margin-right: 15px;"><a
+                                                href="#" class="card">
+                                            <div class="card-body text-center">
+                                                <i class="iconsminds-mail-read"></i>
+                                                <p class="card-text mb-0">New Comments</p>
+                                                <p class="lead text-center">25</p>
+                                            </div>
+                                        </a></div>
+                                    <div class="owl-item cloned" style="width: 144.333px; margin-right: 15px;"><a
+                                                href="#" class="card">
+                                            <div class="card-body text-center">
+                                                <i class="iconsminds-clock"></i>
+                                                <p class="card-text mb-0">Pending Orders</p>
+                                                <p class="lead text-center">16</p>
+                                            </div>
+                                        </a></div>
+                                    <div class="owl-item cloned" style="width: 144.333px; margin-right: 15px;"><a
+                                                href="#" class="card">
+                                            <div class="card-body text-center">
+                                                <i class="iconsminds-basket-coins"></i>
+                                                <p class="card-text mb-0">Completed Orders</p>
+                                                <p class="lead text-center">32</p>
+                                            </div>
+                                        </a></div>
+                                    <div class="owl-item cloned" style="width: 144.333px; margin-right: 15px;"><a
+                                                href="#" class="card">
+                                            <div class="card-body text-center">
+                                                <i class="iconsminds-arrow-refresh"></i>
+                                                <p class="card-text mb-0">Refund Requests</p>
+                                                <p class="lead text-center">2</p>
+                                            </div>
+                                        </a></div>
+                                </div>
+                            </div>
+                            <div class="owl-nav disabled">
+                                <button type="button" role="presentation" class="owl-prev"><span
+                                            aria-label="Previous">‹</span></button>
+                                <button type="button" role="presentation" class="owl-next"><span
+                                            aria-label="Next">›</span></button>
+                            </div>
+                            <div class="owl-dots">
+                                <button role="button" class="owl-dot active"><span></span></button>
+                                <button role="button" class="owl-dot"><span></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 mb-4">
+                        <div class="card">
+                            <div class="position-absolute card-top-buttons">
+
+                                <button class="btn btn-header-light icon-button" type="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                    <i class="simple-icon-refresh"></i>
+                                </button>
+
+                                <div class="dropdown-menu dropdown-menu-right mt-3">
+                                    <a class="dropdown-item" href="#">Sales</a>
+                                    <a class="dropdown-item" href="#">Orders</a>
+                                    <a class="dropdown-item" href="#">Refunds</a>
+                                </div>
+
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Sales</h5>
+                                <div class="dashboard-line-chart">
+                                    <div class="chartjs-size-monitor"
+                                         style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+                                        <div class="chartjs-size-monitor-expand"
+                                             style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                            <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
+                                        </div>
+                                        <div class="chartjs-size-monitor-shrink"
+                                             style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                            <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
+                                        </div>
+                                    </div>
+                                    <canvas id="salesChart" width="407" height="283" class="chartjs-render-monitor"
+                                            style="display: block; width: 407px; height: 283px;"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-6 col-lg-12 mb-4">
+                <div class="card">
+                    <div class="position-absolute card-top-buttons">
+                        <button class="btn btn-header-light icon-button">
+                            <i class="simple-icon-refresh"></i>
+                        </button>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Recent Surveys</h5>
+                        <div class="list disable-text-selection" data-check-all="checkAll">
+                            <div class="card d-flex flex-row mb-3">
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center">
+                                        <a class="list-item-heading mb-0 truncate w-40 w-xs-100  mb-1 mt-1" href="Apps.Survey.html">
+                                            <i class="simple-icon-refresh heading-icon"></i>
+                                            <span class="align-middle d-inline-block">Developer Survey</span>
+                                        </a>
+                                        <p class="mb-1 text-muted text-small w-15 w-xs-100">Personal</p>
+                                        <p class="mb-1 text-muted text-small w-15 w-xs-100">11.03.2019</p>
+                                        <div class="w-15 w-xs-100">
+                                            <span class="badge badge-pill badge-secondary">ON HOLD</span>
+                                        </div>
+                                    </div>
+                                    <div class="custom-control custom-checkbox pl-1 align-self-center pr-4">
+                                        <label class="custom-control custom-checkbox mb-0">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-control-label"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card d-flex flex-row mb-3">
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center">
+                                        <a class="list-item-heading mb-0 truncate w-40 w-xs-100  mb-1 mt-1" href="Apps.Survey.html">
+                                            <i class="simple-icon-refresh heading-icon"></i>
+                                            <span class="align-middle d-inline-block">Designer Survey</span>
+                                        </a>
+                                        <p class="mb-1 text-muted text-small w-15 w-xs-100">Store</p>
+                                        <p class="mb-1 text-muted text-small w-15 w-xs-100">11.03.2019</p>
+                                        <div class="w-15 w-xs-100">
+                                            <span class="badge badge-pill badge-secondary">PROCESSED</span>
+                                        </div>
+                                    </div>
+                                    <div class="custom-control custom-checkbox pl-1 align-self-center pr-4">
+                                        <label class="custom-control custom-checkbox mb-0">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-control-label"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card d-flex flex-row mb-3">
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center">
+                                        <a class="list-item-heading mb-0 truncate w-40 w-xs-100  mb-1 mt-1" href="Apps.Survey.html">
+                                            <i class="simple-icon-check heading-icon"></i>
+
+                                            <span class="align-middle d-inline-block">Backend Survey</span>
+                                        </a>
+                                        <p class="mb-1 text-muted text-small w-15 w-xs-100">Store</p>
+                                        <p class="mb-1 text-muted text-small w-15 w-xs-100">11.03.2019</p>
+                                        <div class="w-15 w-xs-100">
+                                            <span class="badge badge-pill badge-secondary">ON HOLD</span>
+                                        </div>
+                                    </div>
+                                    <div class="custom-control custom-checkbox pl-1 align-self-center pr-4">
+                                        <label class="custom-control custom-checkbox mb-0">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-control-label"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card d-flex flex-row mb-3">
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center">
+                                        <a class="list-item-heading mb-0 truncate w-40 w-xs-100  mb-1 mt-1" href="Apps.Survey.html">
+                                            <i class="simple-icon-check heading-icon"></i>
+
+                                            <span class="align-middle d-inline-block">Backend Survey</span>
+                                        </a>
+                                        <p class="mb-1 text-muted text-small w-15 w-xs-100">Store</p>
+                                        <p class="mb-1 text-muted text-small w-15 w-xs-100">11.03.2019</p>
+                                        <div class="w-15 w-xs-100">
+                                            <span class="badge badge-pill badge-secondary">ON HOLD</span>
+                                        </div>
+                                    </div>
+                                    <div class="custom-control custom-checkbox pl-1 align-self-center pr-4">
+                                        <label class="custom-control custom-checkbox mb-0">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-control-label"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-lg-6 mb-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Logs</h5>
+
+                        <div class="scroll dashboard-logs ps ps--active-y">
+
+                            <table class="table table-sm table-borderless">
+
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="log-indicator border-theme-1 align-middle"></span>
+                                    </td>
+                                    <td>
+                                        <span class="font-weight-medium">New Survey Created</span>
+                                    </td>
+                                    <td class="text-right">
+                                        <span class="text-muted">14:12</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="log-indicator border-theme-2 align-middle"></span>
+                                    </td>
+                                    <td>
+                                        <span class="font-weight-medium">New sale: Survey 1 Data</span>
+                                    </td>
+                                    <td class="text-right">
+                                        <span class="text-muted">13:20</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="log-indicator border-danger align-middle"></span>
+                                    </td>
+                                    <td>
+                                        <span class="font-weight-medium">1 User Answered</span>
+                                    </td>
+                                    <td class="text-right">
+                                        <span class="text-muted">12:55</span>
+                                    </td>
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+                            <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                                <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                            </div>
+                            <div class="ps__rail-y" style="top: 0px; height: 270px; right: 0px;">
+                                <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 232px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 mb-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Participants </h5>
+
+                        <div class="scroll dashboard-list-with-user ps ps--active-y">
+                            <div class="d-flex flex-row mb-3 pb-3 border-bottom">
+                                <a href="#">
+                                    <img src="img/profile-pic-l.jpg" alt="Mayra Sibley"
+                                         class="img-thumbnail border-0 rounded-circle list-thumbnail align-self-center xsmall">
+                                </a>
+                                <div class="pl-3 pr-2">
+                                    <a href="#">
+                                        <p class="font-weight-medium mb-0 ">Test User</p>
+                                        <p class="text-muted mb-0 text-small">on Survey: Survey 1</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row mb-3 pb-3 border-bottom">
+                                <a href="#">
+                                    <img src="img/profile-pic-l-7.jpg" alt="Mimi Carreira"
+                                         class="img-thumbnail border-0 rounded-circle list-thumbnail align-self-center xsmall">
+                                </a>
+                                <div class="pl-3 pr-2">
+                                    <a href="#">
+                                        <p class="font-weight-medium mb-0 ">Test User</p>
+                                        <p class="text-muted mb-0 text-small">on Survey: Survey 2</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row mb-3 pb-3 border-bottom">
+                                <a href="#">
+                                    <img src="img/profile-pic-l-7.jpg" alt="Mimi Carreira"
+                                         class="img-thumbnail border-0 rounded-circle list-thumbnail align-self-center xsmall">
+                                </a>
+                                <div class="pl-3 pr-2">
+                                    <a href="#">
+                                        <p class="font-weight-medium mb-0 ">Test User</p>
+                                        <p class="text-muted mb-0 text-small">on Survey: Survey 2</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                                <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                            </div>
+                            <div class="ps__rail-y" style="top: 0px; height: 270px; right: 0px;">
+                                <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 166px;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<script src="js/vendor/jquery-3.3.1.min.js"></script>
+<script src="js/vendor/bootstrap.bundle.min.js"></script>
+<script src="js/vendor/Chart.bundle.min.js"></script>
+<script src="js/vendor/chartjs-plugin-datalabels.js"></script>
+<script src="js/vendor/moment.min.js"></script>
+<script src="js/vendor/fullcalendar.min.js"></script>
+<script src="js/vendor/datatables.min.js"></script>
+<script src="js/vendor/perfect-scrollbar.min.js"></script>
+<script src="js/vendor/owl.carousel.min.js"></script>
+<script src="js/vendor/progressbar.min.js"></script>
+<script src="js/vendor/jquery.barrating.min.js"></script>
+<script src="js/vendor/select2.full.js"></script>
+<script src="js/vendor/nouislider.min.js"></script>
+<script src="js/vendor/bootstrap-datepicker.js"></script>
+<script src="js/vendor/Sortable.js"></script>
+<script src="js/vendor/mousetrap.min.js"></script>
+<script src="js/dore.script.js"></script>
+<script src="js/scripts.single.theme.js"></script>
+
+</body>
+
+</html>

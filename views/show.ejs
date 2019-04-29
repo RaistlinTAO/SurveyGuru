@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>D Survey Guru - Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../font/iconsmind-s/css/iconsminds.css"/>
+    <link rel="stylesheet" href="../../font/simple-line-icons/css/simple-line-icons.css"/>
+
+    <link rel="stylesheet" href="../../css/vendor/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/vendor/fullcalendar.min.css"/>
+    <link rel="stylesheet" href="../../css/vendor/dataTables.bootstrap4.min.css"/>
+    <link rel="stylesheet" href="../../css/vendor/datatables.responsive.bootstrap4.min.css"/>
+    <link rel="stylesheet" href="../../css/vendor/select2.min.css"/>
+    <link rel="stylesheet" href="../../css/vendor/perfect-scrollbar.css"/>
+    <link rel="stylesheet" href="../../css/vendor/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="../../css/vendor/bootstrap-stars.css"/>
+    <link rel="stylesheet" href="../../css/vendor/nouislider.min.css"/>
+    <link rel="stylesheet" href="../../css/vendor/bootstrap-datepicker3.min.css"/>
+    <link rel="stylesheet" href="../../css/main.css"/>
+    <link rel="stylesheet" href="../../css/dore.light.blue.min.css"/>
+
+</head>
+
+<body id="app-container" class="menu-sub-hidden show-spinner">
+<nav class="navbar fixed-top">
+    <div class="d-flex align-items-center navbar-left">
+        <a href="#" class="menu-button d-none d-md-block">
+            <svg class="main" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 17">
+                <rect x="0.48" y="0.5" width="7" height="1"/>
+                <rect x="0.48" y="7.5" width="7" height="1"/>
+                <rect x="0.48" y="15.5" width="7" height="1"/>
+            </svg>
+            <svg class="sub" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17">
+                <rect x="1.56" y="0.5" width="16" height="1"/>
+                <rect x="1.56" y="7.5" width="16" height="1"/>
+                <rect x="1.56" y="15.5" width="16" height="1"/>
+            </svg>
+        </a>
+
+        <a href="#" class="menu-button-mobile d-xs-block d-sm-block d-md-none">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 17">
+                <rect x="0.5" y="0.5" width="25" height="1"/>
+                <rect x="0.5" y="7.5" width="25" height="1"/>
+                <rect x="0.5" y="15.5" width="25" height="1"/>
+            </svg>
+        </a>
+
+    </div>
+
+
+    <a class="navbar-logo" href="/backend">
+        D SURVEY GURU
+    </a>
+
+    <div class="navbar-right">
+        <div class="header-icons d-inline-block align-middle">
+            <div class="position-relative d-none d-sm-inline-block">
+                <button class="header-icon btn btn-empty" type="button" id="iconMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    <i class="simple-icon-grid"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right mt-3  position-absolute" id="iconMenuDropdown">
+                    <a href="#" class="icon-menu-item">
+                        <i class="iconsminds-equalizer d-block"></i>
+                        <span>Settings</span>
+                    </a>
+
+                    <a href="#" class="icon-menu-item">
+                        <i class="iconsminds-bar-chart-4 d-block"></i>
+                        <span>Profits</span>
+                    </a>
+
+                    <a href="#" class="icon-menu-item">
+                        <i class="iconsminds-file d-block"></i>
+                        <span>Surveys</span>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <button class="header-icon btn btn-empty d-none d-sm-inline-block" type="button" id="fullScreenButton">
+                <i class="simple-icon-size-fullscreen"></i>
+                <i class="simple-icon-size-actual"></i>
+            </button>
+
+        </div>
+
+        <div class="user d-inline-block">
+            <button class="btn btn-empty p-0" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                <span class="name">Test Company</span>
+                <span>
+                        <img alt="Profile Picture" src="../../img/profile-pic-l.jpg"/>
+                    </span>
+            </button>
+
+            <div class="dropdown-menu dropdown-menu-right mt-3">
+                <a class="dropdown-item" href="#">Account</a>
+                <a class="dropdown-item" href="#">History</a>
+                <a class="dropdown-item" href="#">Support</a>
+                <a class="dropdown-item" href="#">Sign out</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="sidebar">
+    <div class="main-menu">
+        <div class="scroll">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="/backend">
+                        <i class="iconsminds-shop-4"></i>
+                        <span>Dashboards</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="/survey">
+                        <i class="iconsminds-digital-drawing"></i> Survey
+                    </a>
+                </li>
+                <li>
+                    <a href="#Resell">
+                        <i class="iconsminds-air-balloon-1"></i> Market
+                    </a>
+                </li>
+                <li>
+                    <a href="#System">
+                        <i class="iconsminds-three-arrow-fork"></i> System
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sub-menu">
+        <div class="scroll">
+
+            <ul class="list-unstyled" data-link="Resell">
+                <li>
+                    <a href="Apps.MediaLibrary.html">
+                        <i class="simple-icon-picture"></i> Surveys
+                    </a>
+                </li>
+                <li>
+                    <a href="Apps.Todo.List.html">
+                        <i class="simple-icon-check"></i> Orders
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-unstyled" data-link="System">
+
+                <li>
+                    <a href="Ui.Tables.html">
+                        <i class="simple-icon-grid"></i> Settings
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<main>
+    <div class="container-fluid">
+        <div class="row app-row ">
+            <div class="col-12 survey-app">
+                <div class="mb-2">
+                    <h1>
+                        <%= survey[0].surveyTitle %></h1>
+                    <div class="float-md-right">
+
+                        <button type="button"
+                                class="btn btn-lg btn-outline-primary dropdown-toggle dropdown-toggle-split top-right-button top-right-button-single"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ACTIONS
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav nav-tabs separator-tabs ml-0 mb-5" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="first-tab" data-toggle="tab" href="#first" role="tab"
+                           aria-controls="first" aria-selected="true">DETAILS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="third-tab" data-toggle="tab" href="#third" role="tab"
+                           aria-controls="third"
+                           aria-selected="false">RESULTS</a>
+                    </li>
+                </ul>
+                <div class="tab-content mb-4">
+                    <div class="tab-pane show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+                        <div class="row">
+
+                            <div class="col-lg-12 col-12 mb-12">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <p class="list-item-heading mb-4">Summary</p>
+
+                                        <p class="text-muted text-small mb-2">Date</p>
+                                        <p class="mb-3">
+                                            12.03.2019 - 18.03.2019
+                                        </p>
+
+                                        <p class="text-muted text-small mb-2">Labels</p>
+                                        <div>
+                                            <p class="d-sm-inline-block mb-1">
+                                                <a href="#">
+                                                    <span class="badge badge-pill badge-outline-theme-3 mb-1"><%= survey[0].surveyCategory %></span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-12">
+                                <form method="post" action="/survey/addQuestion">
+                                    <div class="survey-app">
+                                        <div id="question1">
+                                            <div class="card question d-flex mb-4 edit-quesiton">
+                                                <div class="d-flex flex-grow-1 min-width-zero">
+
+                                                    <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center">
+                                                        <div class="list-item-heading mb-0 truncate w-80 mb-1 mt-1">
+                                                            Question 1
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox pl-1 align-self-center pr-4">
+                                                        <button class="btn btn-outline-theme-3 icon-button rotate-icon-click rotate"
+                                                                type="button" data-toggle="collapse" data-target="#q1"
+                                                                aria-expanded="true" aria-controls="q1">
+                                                            <i class="simple-icon-arrow-down with-rotate-icon"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="question-collapse collapse show" id="q1">
+                                                    <div class="card-body pt-0">
+                                                        <div class="edit-mode">
+                                                            <div class="form-group mb-3">
+                                                                <label>Title</label>
+                                                                <input class="form-control" type="text"
+                                                                       placeholder="Question Title, for example, Age"
+                                                                       name="q1title">
+                                                            </div>
+                                                            <div class="form-group mb-5">
+                                                                <label>Question</label>
+                                                                <input class="form-control" type="text"
+                                                                       placeholder="Question itself, for example, How old are you?"
+                                                                       name="q1question">
+                                                            </div>
+
+                                                            <div class="separator mb-4"></div>
+
+                                                            <div class="form-group">
+                                                                <label class="d-block">Answer Type</label>
+                                                                <select class="form-control select2-single"
+                                                                        name="q1type">
+                                                                    <option value="1" selected>Single Select</option>
+                                                                    <option value="2">Multiple Select</option>
+                                                                    <option value="3">Checkbox</option>
+                                                                    <option value="4">Radiobutton</option>
+                                                                </select>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label class="d-block">Answers</label>
+                                                                <div class="answers mb-3 sortable">
+                                                                    <div class="mb-1 position-relative" id="q1a1">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q1a1">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q1a1)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q1a2">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q1a2">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q1a2)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q1a3">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q1a3">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q1a3)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q1a4">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q1a4">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q1a4)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q1a5">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q1a5">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q1a5)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q1a6">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q1a6">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="text-center">
+                                                                    <button type="button" onclick="addAnswer(1)"
+                                                                            class="btn btn-outline-primary btn-sm mb-2">
+                                                                        <i class="simple-icon-plus btn-group-icon"></i>
+                                                                        Add Answer
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="question2">
+                                            <div class="card question d-flex mb-4 edit-quesiton">
+                                                <div class="d-flex flex-grow-1 min-width-zero">
+                                                    <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center">
+                                                        <div class="list-item-heading mb-0 truncate w-80 mb-1 mt-1">
+                                                            Question 2
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox pl-1 align-self-center pr-4">
+                                                        <button class="btn btn-outline-theme-3 icon-button rotate-icon-click"
+                                                                type="button" data-toggle="collapse" data-target="#q2"
+                                                                aria-expanded="false" aria-controls="q2">
+                                                            <i class="simple-icon-arrow-down with-rotate-icon"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="collapse question-collapse" id="q2">
+                                                    <div class="card-body pt-0">
+                                                        <div class="edit-mode">
+                                                            <div class="form-group mb-3">
+                                                                <label>Title</label>
+                                                                <input class="form-control" type="text"
+                                                                       placeholder="Question Title, for example, Age"
+                                                                       name="q2title">
+                                                            </div>
+                                                            <div class="form-group mb-5">
+                                                                <label>Question</label>
+                                                                <input class="form-control" type="text"
+                                                                       placeholder="Question itself, for example, How old are you?"
+                                                                       name="q2question">
+                                                            </div>
+
+                                                            <div class="separator mb-4"></div>
+
+                                                            <div class="form-group">
+                                                                <label class="d-block">Answer Type</label>
+                                                                <select class="form-control select2-single"
+                                                                        name="q2type">
+                                                                    <option value="1" selected>Single Select</option>
+                                                                    <option value="2">Multiple Select</option>
+                                                                    <option value="3">Checkbox</option>
+                                                                    <option value="4">Radiobutton</option>
+                                                                </select>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label class="d-block">Answers</label>
+                                                                <div class="answers mb-3 sortable">
+                                                                    <div class="mb-1 position-relative" id="q2a1">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q2a1">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q2a1)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q2a2">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q2a2">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q2a2)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q2a3">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q2a3">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q2a3)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q2a4">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q2a4">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q2a4)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q2a5">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q2a5">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q2a5)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q2a6">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q2a6">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q2a6)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="text-center">
+                                                                    <button type="button" onclick="addAnswer(2)"
+                                                                            class="btn btn-outline-primary btn-sm mb-2">
+                                                                        <i class="simple-icon-plus btn-group-icon"></i>
+                                                                        Add Answer
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="question3">
+                                            <div class="card question d-flex mb-4 edit-quesiton">
+                                                <div class="d-flex flex-grow-1 min-width-zero">
+                                                    <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center">
+                                                        <div class="list-item-heading mb-0 truncate w-80 mb-1 mt-1">
+                                                            Question 3
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox pl-1 align-self-center pr-4">
+                                                        <button class="btn btn-outline-theme-3 icon-button rotate-icon-click"
+                                                                type="button" data-toggle="collapse" data-target="#q3"
+                                                                aria-expanded="false" aria-controls="q3">
+                                                            <i class="simple-icon-arrow-down with-rotate-icon"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="collapse question-collapse" id="q3">
+                                                    <div class="card-body pt-0">
+                                                        <div class="edit-mode">
+                                                            <div class="form-group mb-3">
+                                                                <label>Title</label>
+                                                                <input class="form-control" type="text"
+                                                                       placeholder="Question Title, for example, Age"
+                                                                       name="q3title">
+                                                            </div>
+                                                            <div class="form-group mb-5">
+                                                                <label>Question</label>
+                                                                <input class="form-control" type="text"
+                                                                       placeholder="Question itself, for example, How old are you?"
+                                                                       name="q3question">
+                                                            </div>
+
+                                                            <div class="separator mb-4"></div>
+
+                                                            <div class="form-group">
+                                                                <label class="d-block">Answer Type</label>
+                                                                <select class="form-control select2-single"
+                                                                        name="q3type">
+                                                                    <option value="1" selected>Single Select</option>
+                                                                    <option value="2">Multiple Select</option>
+                                                                    <option value="3">Checkbox</option>
+                                                                    <option value="4">Radiobutton</option>
+                                                                </select>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label class="d-block">Answers</label>
+                                                                <div class="answers mb-3 sortable">
+                                                                    <div class="mb-1 position-relative" id="q3a1">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q3a1">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q3a1)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q3a2">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q3a2">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q3a2)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q3a3">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q3a3">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q3a3)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q3a4">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q3a4">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q3a4)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q3a5">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q3a5">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q3a5)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q3a6">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q3a6">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q3a6)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="text-center">
+                                                                    <button type="button" onclick="addAnswer(3)"
+                                                                            class="btn btn-outline-primary btn-sm mb-2">
+                                                                        <i class="simple-icon-plus btn-group-icon"></i>
+                                                                        Add Answer
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div id="question4">
+                                            <div class="card question d-flex mb-4 edit-quesiton">
+                                                <div class="d-flex flex-grow-1 min-width-zero">
+                                                    <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center">
+                                                        <div class="list-item-heading mb-0 truncate w-80 mb-1 mt-1">
+                                                            Question 4
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox pl-1 align-self-center pr-4">
+                                                        <button class="btn btn-outline-theme-3 icon-button rotate-icon-click"
+                                                                type="button" data-toggle="collapse" data-target="#q4"
+                                                                aria-expanded="false" aria-controls="q4">
+                                                            <i class="simple-icon-arrow-down with-rotate-icon"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="collapse question-collapse" id="q4">
+                                                    <div class="card-body pt-0">
+                                                        <div class="edit-mode">
+                                                            <div class="form-group mb-3">
+                                                                <label>Title</label>
+                                                                <input class="form-control" type="text"
+                                                                       placeholder="Question Title, for example, Age"
+                                                                       name="q4title">
+                                                            </div>
+                                                            <div class="form-group mb-5">
+                                                                <label>Question</label>
+                                                                <input class="form-control" type="text"
+                                                                       placeholder="Question itself, for example, How old are you?"
+                                                                       name="q4question">
+                                                            </div>
+
+                                                            <div class="separator mb-4"></div>
+
+                                                            <div class="form-group">
+                                                                <label class="d-block">Answer Type</label>
+                                                                <select class="form-control select2-single"
+                                                                        name="q4type">
+                                                                    <option value="1" selected>Single Select</option>
+                                                                    <option value="2">Multiple Select</option>
+                                                                    <option value="3">Checkbox</option>
+                                                                    <option value="4">Radiobutton</option>
+                                                                </select>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label class="d-block">Answers</label>
+                                                                <div class="answers mb-3 sortable">
+                                                                    <div class="mb-1 position-relative" id="q4a1">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q4a1">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q4a1)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q4a2">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q4a2">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q4a2)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q4a3">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q4a3">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q4a3)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q4a4">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q4a4">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q4a4)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q4a5">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q4a5">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q4a5)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-1 position-relative" id="q4a6">
+                                                                        <input class="form-control" type="text" value=""
+                                                                               name="q4a6">
+                                                                        <div class="input-icons">
+                                                                            <span class="badge badge-pill handle pr-0 mr-0">
+                                                                                <i class="simple-icon-cursor-move"></i>
+                                                                            </span>
+                                                                            <span class="badge badge-pill">
+                                                                                <i class="simple-icon-ban"
+                                                                                   onclick="removeAnswer(q4a6)"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="text-center">
+                                                                    <button type="button" onclick="addAnswer(4)"
+                                                                            class="btn btn-outline-primary btn-sm mb-2">
+                                                                        <i class="simple-icon-plus btn-group-icon"></i>
+                                                                        Add Answer
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button type="button" onclick="addQuestion()"
+                                                class="btn btn-outline-primary btn-sm mb-2">
+                                            <i class="simple-icon-plus btn-group-icon"></i>
+                                            Add Question
+                                        </button>
+                                        <button type="submit" class="btn btn-outline-primary btn-sm mb-2">
+                                            <i class="simple-icon-plus btn-group-icon"></i>
+                                            Submit Questions
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
+                        <div class="row">
+
+                            <div class="col-lg-4 col-12 mb-4">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <p class="list-item-heading mb-4">Quota</p>
+                                        <div class="mb-4">
+                                            <p class="mb-2">Gender</p>
+
+                                            <div class="progress mb-3">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                                     aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-theme-2" role="progressbar"
+                                                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+
+                                            <table class="table table-sm table-borderless">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="p-0 pb-1 w-10">
+                                                        <span class="log-indicator border-theme-1 align-middle"></span>
+                                                    </td>
+                                                    <td class="p-0 pb-1">
+                                                                <span class="font-weight-medium text-muted text-small">105/125
+                                                                    Male</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-0 pb-1 w-10">
+                                                        <span class="log-indicator border-theme-2 align-middle"></span>
+                                                    </td>
+                                                    <td class="p-0 pb-1">
+                                                                <span class="font-weight-medium text-muted text-small">90/125
+                                                                    Female</span>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <p class="mb-2">Education</p>
+                                            <div class="progress mb-3">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="80"
+                                                     aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-theme-2" role="progressbar"
+                                                     aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+
+                                            <table class="table table-sm table-borderless">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="p-0 pb-1 w-10">
+                                                        <span class="log-indicator border-theme-1 align-middle"></span>
+                                                    </td>
+                                                    <td class="p-0 pb-1">
+                                                                <span class="font-weight-medium text-muted text-small">139/125
+                                                                    College</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-0 pb-1 w-10">
+                                                        <span class="log-indicator border-theme-2 align-middle"></span>
+                                                    </td>
+                                                    <td class="p-0 pb-1">
+                                                                <span class="font-weight-medium text-muted text-small">95/125
+                                                                    High School</span>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div>
+                                            <p class="mb-2">Age</p>
+                                            <div class="progress mb-3">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="35"
+                                                     aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-theme-2" role="progressbar"
+                                                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-theme-3" role="progressbar"
+                                                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+
+                                            <table class="table table-sm table-borderless">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="p-0 pb-1 w-10">
+                                                        <span class="log-indicator border-theme-1 align-middle"></span>
+                                                    </td>
+                                                    <td class="p-0 pb-1">
+                                                                <span class="font-weight-medium text-muted text-small">50/75
+                                                                    18-24</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-0 pb-1 w-10">
+                                                        <span class="log-indicator border-theme-2 align-middle"></span>
+                                                    </td>
+                                                    <td class="p-0 pb-1">
+                                                                <span class="font-weight-medium text-muted text-small">40/75
+                                                                    24-30</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-0 pb-1 w-10">
+                                                        <span class="log-indicator border-theme-3 align-middle"></span>
+                                                    </td>
+                                                    <td class="p-0 pb-1">
+                                                                <span class="font-weight-medium text-muted text-small">60/75
+                                                                    30-40</span>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-12 col-lg-8">
+
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <h6 class="mb-4">How old are you?</h6>
+                                        <div class="dashboard-donut-chart">
+                                            <canvas id="ageChart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <h6 class="mb-4">What is your gender?</h6>
+                                        <div class="dashboard-donut-chart">
+                                            <canvas id="genderChart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <h6 class="mb-4">What is your employment status?</h6>
+                                        <div class="dashboard-donut-chart">
+                                            <canvas id="workChart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card ">
+                                    <div class="card-body">
+                                        <h6 class="mb-4">What programming languages do you use?</h6>
+                                        <div class="dashboard-donut-chart">
+                                            <canvas id="codingChart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="app-menu">
+        <div class="p-4">
+            <div class="scroll">
+                <p class="text-muted text-small">Status</p>
+                <ul class="list-unstyled mb-5">
+                    <li class="active">
+                        <a href="#">
+                            <i class="simple-icon-refresh"></i>
+                            Active Surveys
+                            <span class="float-right">3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="simple-icon-check"></i>
+                            Completed Surveys
+                            <span class="float-right">0</span>
+
+                        </a>
+                    </li>
+                </ul>
+
+                <p class="text-muted text-small">Categories</p>
+                <ul class="list-unstyled mb-5">
+                    <li>
+                        <div class="custom-control custom-checkbox mb-2">
+                            <input type="checkbox" class="custom-control-input" id="category1">
+                            <label class="custom-control-label" for="category1">Education</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="custom-control custom-checkbox mb-2">
+                            <input type="checkbox" class="custom-control-input" id="category2">
+                            <label class="custom-control-label" for="category2">Technology</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="custom-control custom-checkbox ">
+                            <input type="checkbox" class="custom-control-input" id="category3">
+                            <label class="custom-control-label" for="category3">Entertainment</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a class="app-menu-button d-inline-block d-xl-none" href="#">
+            <i class="simple-icon-refresh"></i>
+        </a>
+    </div>
+
+</main>
+
+<script src="../../js/vendor/jquery-3.3.1.min.js"></script>
+<script src="../../js/vendor/bootstrap.bundle.min.js"></script>
+<script src="../../js/vendor/Chart.bundle.min.js"></script>
+<script src="../../js/vendor/chartjs-plugin-datalabels.js"></script>
+<script src="../../js/vendor/moment.min.js"></script>
+<script src="../../js/vendor/fullcalendar.min.js"></script>
+<script src="../../js/vendor/datatables.min.js"></script>
+<script src="../../js/vendor/perfect-scrollbar.min.js"></script>
+<script src="../../js/vendor/owl.carousel.min.js"></script>
+<script src="../../js/vendor/progressbar.min.js"></script>
+<script src="../../js/vendor/jquery.barrating.min.js"></script>
+<script src="../../js/vendor/select2.full.js"></script>
+<script src="../../js/vendor/nouislider.min.js"></script>
+<script src="../../js/vendor/bootstrap-datepicker.js"></script>
+<script src="../../js/vendor/Sortable.js"></script>
+<script src="../../js/vendor/mousetrap.min.js"></script>
+<script src="../../js/dore.script.js"></script>
+<script src="../../js/scripts.single.theme.js"></script>
+<script>
+    i = 1;
+    q1 = 1;
+    q2 = 1;
+    q3 = 1;
+    q4 = 1;
+    $(document).ready(function () {
+        $("#question2").hide();
+        $("#question3").hide();
+        $("#question4").hide();
+        for (j = 1; j < 7; j++) {
+            $("#q1a" + j).hide();
+            $("#q2a" + j).hide();
+            $("#q3a" + j).hide();
+            $("#q4a" + j).hide();
+        }
+    });
+
+    function addQuestion() {
+        if (i < 4) {
+            $("#question" + (i + 1).toString()).show();
+            i++;
+        }
+
+    }
+
+    function addAnswer($question) {
+        switch ($question) {
+            case 1:
+                $("#q1a" + q1).show();
+                q1++;
+                break;
+            case 2:
+                $("#q2a" + q2).show();
+                q2++;
+                break;
+            case 3:
+                $("#q3a" + q3).show();
+                q3++;
+                break;
+            case 4:
+                $("#q4a" + q4).show();
+                q4++;
+                break;
+        }
+    }
+
+    function removeAnswer($id) {
+        $("#" + $id.id).hide();
+    }
+</script>
+</body>
+
+</html>
