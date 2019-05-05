@@ -74,6 +74,30 @@ router.get('/answer', function (req, res, next) {
 
 });
 
+router.post('/answerQuestion', function (req, res, next) {
+    console.log(req.body);
+    answers = req.body.questions.split('|');
+    answers.forEach(function (question)
+    {
+        if(question.trim() !== '')
+        {
+            var sql = "INSERT INTO answer (questionID, answerValue) VALUES ('" + question.trim() +
+                "', '" + req.body[question.trim()] + "')";
+            console.log(sql);
+            con.query(sql, function (err, result) {
+                if (err) throw err;
+                console.log("1 record inserted");
+            });
+        }
+    });
+    con.query("SELECT * FROM survey", function (err, result, fields) {
+        if (err) throw err;
+        //serveries = {'serveries': result};
+        console.log(result);
+        res.render('csurvey', {serveries: result});
+    });
+});
+
 router.post('/addQuestion', function (req, res, next) {
     if (req.body.q1title !== "") {
         var sql = "INSERT INTO question (questionTitle, questionType, questionAnswer,questionBelong) VALUES ('" + req.body.q1title +

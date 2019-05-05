@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>D Survey Guru - Company</title>
+    <title>D Survey Guru - TEST User</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="../../font/iconsmind-s/css/iconsminds.css"/>
@@ -208,9 +208,10 @@
                             </div>
 
                             <div class="col-12 col-lg-12">
-                                <form method="post" action="/survey/answerQuestion">
+                                <form method="post" action="/survey/answerquestion">
                                     <input class="form-control" type="text"
                                            name="surveyID" value="<%= survey[0].surveyID %>" style="display: none">
+                                    <input class="form-control" type="text"name="questions" value="<% questions.forEach(function (question) { %><%= question.questionId %>|<% }) %>" style="display: none">
                                     <div class="survey-app">
                                         <% questions.forEach(function (question) { %>
                                             <% switch (question.questionType) {
@@ -238,11 +239,11 @@
                                                         <div class="card-body pt-0">
                                                             <div class="view-mode">
                                                                 <div class="view-mode">
-                                                                    <select class="form-control select2-single">
+                                                                    <select class="form-control select2-single" name="<%= question.questionId %>">
                                                                         <% Answers = question.questionAnswer.split("|"); %>
                                                                         <% Answers.forEach(function (Answer) { %>
                                                                             <% if(Answer != "") { %>
-                                                                                <option value="0"><%= Answer %></option>
+                                                                                <option value="<%= Answer %>"><%= Answer %></option>
                                                                             <% } %>
                                                                         <% }) %>
                                                                     </select>
@@ -280,16 +281,19 @@
                                                             <div class="view-mode">
                                                                 <div class="view-mode">
                                                                     <% Answers = question.questionAnswer.split("|"); %>
+                                                                    <% i= 0; %>
                                                                     <% Answers.forEach(function (Answer) { %>
+
                                                                         <% if(Answer != "") { %>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
                                                                                        class="custom-control-input"
-                                                                                       id="<%= Answer %>">
+                                                                                       id="cd<%= i %>" name="<%= question.questionId %>" value="<%= Answer %>">
                                                                                 <label class="custom-control-label"
-                                                                                       for="<%= Answer %>"><%= Answer %></label>
+                                                                                       for="cd<%= i %>"><%= Answer %></label>
                                                                             </div>
                                                                         <% } %>
+                                                                        <% i = i + 1; %>
                                                                     <% }) %>
 
                                                                 </div>
@@ -325,13 +329,15 @@
                                                             <div class="view-mode">
                                                                 <div class="view-mode">
                                                                     <% Answers = question.questionAnswer.split("|"); %>
+                                                                    <% i= 0; %>
                                                                     <% Answers.forEach(function (Answer) { %>
                                                                         <% if(Answer != "") { %>
                                                                             <div class="custom-control custom-radio">
-                                                                                <input type="radio" id="<%= Answer %>" name="customRadio" class="custom-control-input">
-                                                                                <label class="custom-control-label" for="<%= Answer %>"><%= Answer %></label>
+                                                                                <input type="radio" id="rd<%= i %>" name="<%= question.questionId %>" class="custom-control-input" value="<%= Answer %>">
+                                                                                <label class="custom-control-label" for="rd<%= i %>"><%= Answer %></label>
                                                                             </div>
                                                                         <% } %>
+                                                                            <% i = i + 1; %>
                                                                     <% }) %>
 
                                                                 </div>
