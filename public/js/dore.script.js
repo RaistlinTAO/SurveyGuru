@@ -2517,7 +2517,7 @@ $.dore = function (element, options) {
           plugins: [centerTextPlugin],
           type: "DoughnutWithShadow",
           data: {
-            labels: ["12-24", "24-30", "30-40", "40-50", "50-60"],
+            labels: ["0-500", "501-700", "701-900", "900+"],
             datasets: [
               {
                 label: "",
@@ -2525,18 +2525,74 @@ $.dore = function (element, options) {
                   themeColor1,
                   themeColor2,
                   themeColor3,
-                  themeColor4,
-                  themeColor5
+                  themeColor4
                 ],
                 backgroundColor: [
                   themeColor1_10,
                   themeColor2_10,
                   themeColor3_10,
-                  themeColor4_10,
-                  themeColor5_10
+                  themeColor4_10
                 ],
                 borderWidth: 2,
-                data: [15, 25, 20, 30, 14]
+                data: [15, 35, 90, 55]
+              }
+            ]
+          },
+          draw: function () { },
+          options: {
+            plugins: {
+              datalabels: {
+                display: false
+              }
+            },
+            responsive: true,
+            maintainAspectRatio: false,
+            cutoutPercentage: 80,
+            title: {
+              display: false
+            },
+            layout: {
+              padding: {
+                bottom: 20
+              }
+            },
+            legend: {
+              position: "bottom",
+              labels: {
+                padding: 30,
+                usePointStyle: true,
+                fontSize: 12
+              }
+            },
+            tooltips: chartTooltip
+          }
+        });
+      }
+
+      if (document.getElementById("ageChart2")) {
+        var ageChart2 = document.getElementById("ageChart2");
+        var myDoughnutChart = new Chart(ageChart2, {
+          plugins: [centerTextPlugin],
+          type: "DoughnutWithShadow",
+          data: {
+            labels: ["0-500", "501-700", "701-900", "900+"],
+            datasets: [
+              {
+                label: "",
+                borderColor: [
+                  themeColor1,
+                  themeColor2,
+                  themeColor3,
+                  themeColor4
+                ],
+                backgroundColor: [
+                  themeColor1_10,
+                  themeColor2_10,
+                  themeColor3_10,
+                  themeColor4_10
+                ],
+                borderWidth: 2,
+                data: [90, 15, 35, 55]
               }
             ]
           },

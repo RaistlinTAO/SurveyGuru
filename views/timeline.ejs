@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="../css/vendor/bootstrap-datepicker3.min.css"/>
     <link rel="stylesheet" href="../css/main.css"/>
     <link rel="stylesheet" href="../css/dore.light.blue.min.css"/>
-
+    <link rel="stylesheet" href="../css/main.css"/>
 </head>
 
 <body id="app-container" class="menu-sub-hidden show-spinner">
@@ -92,7 +92,7 @@
         <div class="user d-inline-block">
             <button class="btn btn-empty p-0" type="button" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false">
-                <span class="name">Test Account</span>
+                <span class="name">Test Company</span>
                 <span>
                         <img alt="Profile Picture" src="../img/profile-pic-l.jpg"/>
                     </span>
@@ -112,14 +112,19 @@
         <div class="scroll">
             <ul class="list-unstyled">
                 <li>
-                    <a href="/whatever">
+                    <a href="/backend">
                         <i class="iconsminds-shop-4"></i>
                         <span>Dashboards</span>
                     </a>
                 </li>
-                <li class="active">
-                    <a href="/survey/answerSurvey">
+                <li>
+                    <a href="/survey">
                         <i class="iconsminds-digital-drawing"></i> Survey
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#Resell">
+                        <i class="iconsminds-air-balloon-1"></i> Market
                     </a>
                 </li>
                 <li>
@@ -136,12 +141,12 @@
 
             <ul class="list-unstyled" data-link="Resell">
                 <li>
-                    <a href="Apps.MediaLibrary.html">
+                    <a href="/market/survey">
                         <i class="simple-icon-picture"></i> Surveys
                     </a>
                 </li>
                 <li>
-                    <a href="Apps.Todo.List.html">
+                    <a href="/market/orders">
                         <i class="simple-icon-check"></i> Orders
                     </a>
                 </li>
@@ -160,118 +165,21 @@
 </div>
 <main>
     <div class="container-fluid">
-        <div class="row app-row">
-            <div class="col-12">
-
-                <div class="mb-2">
-                    <h1>Surveys</h1>
-                </div>
-
-                <div class="mb-2">
-                    <a class="btn pt-0 pl-0 d-inline-block d-md-none" data-toggle="collapse" href="#displayOptions"
-                       role="button" aria-expanded="true" aria-controls="displayOptions">
-                        Display Options
-                        <i class="simple-icon-arrow-down align-middle"></i>
-                    </a>
-                    <div class="collapse d-md-block" id="displayOptions">
-                        <div class="d-block d-md-inline-block">
-                            <div class="btn-group float-md-left mr-1 mb-1">
-                                <button class="btn btn-outline-dark btn-xs dropdown-toggle" type="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Order By
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Create Time</a>
-                                    <a class="dropdown-item" href="#">Status</a>
-                                </div>
-                            </div>
-                            <div class="search-sm d-inline-block float-md-left mr-1 mb-1 align-top">
-                                <input placeholder="Search...">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="separator mb-5"></div>
-
-                <div class="list disable-text-selection" data-check-all="checkAll">
-                    <% serveries.forEach(function (survey) { %>
-                        <div class="card d-flex flex-row mb-3">
-                            <div class="d-flex flex-grow-1 min-width-zero">
-                                <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center">
-                                    <a class="list-item-heading mb-0 truncate w-40 w-xs-100  mb-1 mt-1"
-                                       href="/survey/answer/?surveyID=<%= survey.surveyID %>">
-                                        <i class="simple-icon-refresh heading-icon"></i>
-                                        <span class="align-middle d-inline-block"><%= survey.surveyTitle %></span>
-                                    </a>
-                                    <p class="mb-1 text-muted text-small w-15 w-xs-100"><%= survey.surveyCategory %></p>
-                                    <p class="mb-1 text-muted text-small w-15 w-xs-100">20.03.2019</p>
-                                    <div class="w-15 w-xs-100">
-                                        <span class="badge badge-pill badge-secondary">PROCESSING</span>
-                                    </div>
-                                </div>
-                                <div class="custom-control custom-checkbox pl-1 align-self-center pr-4">
-                                    <label class="custom-control custom-checkbox mb-0">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-label"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    <% }) %>
-
-                </div>
-            </div>
+        <h1> Survey Data Timeline</h1>
+        <div>
+        <div class="left-content">
+            <p><span class="badge badge-primary mb-1">01:55AM 02 MAY 2019</span><br>Company WI PTY LTD<br> Transaction ID:234ljkjhsdf, 100 token</p>
+            <p><span class="badge badge-primary mb-1">10:55AM 05 MAY 2019</span><br>Company 2CDSI PTY LTD<br> Transaction ID:234ljkjhsdf, 100 token</p>
+            <p><span class="badge badge-primary mb-1">07:23PM 09 MAY 2019</span><br>Company CDE PTY LTD<br> Transaction ID:234ljkjhsdf, 100 token</p>
         </div>
-    </div>
-    <div class="app-menu">
-        <div class="p-4">
-            <div class="scroll">
-                <p class="text-muted text-small">Status</p>
-                <ul class="list-unstyled mb-5">
-                    <li class="active">
-                        <a href="#">
-                            <i class="simple-icon-refresh"></i>
-                            Active Surveys
-                            <span class="float-right">3</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="simple-icon-check"></i>
-                            Completed Surveys
-                            <span class="float-right">0</span>
-
-                        </a>
-                    </li>
-                </ul>
-
-                <p class="text-muted text-small">Categories</p>
-                <ul class="list-unstyled mb-5">
-                    <li>
-                        <div class="custom-control custom-checkbox mb-2">
-                            <input type="checkbox" class="custom-control-input" id="category1">
-                            <label class="custom-control-label" for="category1">Education</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="custom-control custom-checkbox mb-2">
-                            <input type="checkbox" class="custom-control-input" id="category2">
-                            <label class="custom-control-label" for="category2">Technology</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="custom-control custom-checkbox ">
-                            <input type="checkbox" class="custom-control-input" id="category3">
-                            <label class="custom-control-label" for="category3">Entertainment</label>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+        <div class="right-content">
+            <p><span class="badge badge-primary mb-1">08:24AM 01 MAY 2019</span><br>Company DTPC PTY LTD<br> Transaction ID:54ccjkjhsdf, 100 token</p>
+            <p><span class="badge badge-primary mb-1">12:45AM 03 MAY 2019</span><br>Company ACI PTY LTD<br> Transaction ID:234ljkjhsdf, 100 token</p>
+            <p><span class="badge badge-primary mb-1">09:25PM 08 MAY 2019</span><br>Company DCCC PTY LTD<br> Transaction ID:234ljkjhsdf, 100 token</p>
         </div>
-        <a class="app-menu-button d-inline-block d-xl-none" href="#">
-            <i class="simple-icon-refresh"></i>
-        </a>
+            </div>
     </div>
+
 </main>
 
 <script src="../js/vendor/jquery-3.3.1.min.js"></script>
@@ -292,7 +200,7 @@
 <script src="../js/vendor/mousetrap.min.js"></script>
 <script src="../js/dore.script.js"></script>
 <script src="../js/scripts.single.theme.js"></script>
-
+<script src="../js/main.js"></script>
 </body>
 
 </html>
